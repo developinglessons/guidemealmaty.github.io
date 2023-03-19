@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuideMe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Yanone+Kaffeesatz:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="menu__wrapper">
+                <div class="menu__links">
+                    <a href="#afisha">Афиша</a>
+                    <a href="#map">Карта города</a>
+                    <a href="#catalog">Список мест</a>
+                </div>
+                <div class="menu__search">
+                    <form>
+                        <input type="text" name="text" class="search"placeholder="Поисковая строка">
+                        <input type="submit" name="submit" class="menu__search-btn" value="Поиск">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="afisha" id="afisha">
+        <div class="container">
+            <div class="wrapper">
+                <div class="carousel-container">
+                    <div class="carousel">
+                      <div class="carousel-item"> <img src="img/2/slide1.jpg" alt="slide1"> </div>
+                      <div class="carousel-item"> <img src="img/2/slide2.png" alt="slide2"> </div>
+                     <!--  <div class="carousel-item"> <img src="img/2/lyubov-po-italyanski-v-almaty slaider (1).jpg" alt="slide3"> </div> -->
+                    </div>
+                    <div class="carousel-dots"></div>
+                    <button class="carousel-prev">&lt;</button>
+                    <button class="carousel-next">&gt;</button>
+                </div>
+
+                <div class="exchange">
+                    <div class="exchange__header">
+                            Курс валют
+                    </div>
+                    <div class="exchange__wrapper">
+                            <div class="exchange__usd">
+                                <div class="exchange__usd-button"><img src="icons/aside/usd.png" alt="usd"></div>
+                                <div class="exchange__usd-title">USD</div>
+                                <div class="exchange__usd-rate">467</div>
+                            </div>
+                            <div class="exchange__eur">
+                                <button class="exchange__eur-button"><img src="icons/aside/eur.png" alt=""></button>
+                                <div class="exchange__eur-title">EUR</div>
+                                <div class="exchange__eur-rate">502</div>
+                            </div>
+                            <div class="exchange__rub">
+                                <button class="exchange__rub-button"><img src="icons/aside/rub.png" alt="rub"></button>
+                                <div class="exchange__rub-title">RUB</div>
+                                <div class="exchange__rub-rate">6.25</div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="map" id="map">
+        <div class="container">
+            <div class="wrapper_box">
+                <button class="box" id="blue">Активный отдых</button>
+                <button class="box" id="red">Еда</button>
+                <button class="box" id="purple">Театры</button>
+                <button class="box" id="yellow">Достопримечательности</button>
+                <button class="box" id="green">Парки</button>
+            </div>
+
+            <div class="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa9dab906b5e15fb05d99dc45fb6738e045a2378f87291857c81e7249c560aed5&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <ul class="catalog__tabs">
+                <li class="catalog__tab"><div>Рестораны</div></li>
+                <li class="catalog__tab"><div>Достопримечательности</div></li>
+                <li class="catalog__tab catalog__tab_active"><div>Активный отдых</div></li>
+            </ul>
+
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">MAMMA MIA</div>
+                            <img src="img/4/mammamia.jpg" alt="mammamia" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>График работы:</span> <br> ежедневно, время работы уточняйте у филиала
+                            
+                            <span>Время пути от международного аэропорта:</span> <br> зависит от расположения филиала
+                            </div>
+                            <a href="#" class="catalog-item__link">Подробнее</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>MAMMA MIA – это сеть заведений, которая, на протяжении многих лет, встречает гостей уютным интерьером, вкусной кухней и высоким сервисом обслуживания
+                                <br> <br>
+                                Более 10 заведений по Казахстану и тысячи благодарных гостей, ставших визитной карточкой MAMMA MIA.
+                                <br><br>
+                                Качество, надежность и любовь к своему делу - те ориентиры, которых мы придерживаемся и которые объединяют всю сеть под одной крышей.</li>
+                            <a href="#" class="catalog-item__back">Назад</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Дадиани</div>
+                            <img src="img/4/dadiani.jpg" alt="dadiani" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>График работы:</span> Ежедневно с 12:00 до 00:00
+                            <br> 
+                            <span>Время пути от международного аэропорта:</span> 30 <br> минут
+                            </div>
+                            <a href="" class="catalog-item__link">Подробнее</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Блюда для гурманов, безумно вкусные мясные сеты, вина из грузинских погребов, непринуждённая живая музыка и, конечно же, вкуснейшие шашлыки – всё это кафе грузинской кухни «Дадиани»..</li>
+                            <a href="#" class="catalog-item__back">Назад</a>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Центральная мечеть</div>
+                            <img src="img/4/mechet.jpg" alt="mechet" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Время работы:</span> ежедневно с 9:00 до 18:00
+                            <br> 
+                            <span>Время пути от международного аэропорта:</span> 25 <br> минут
+                            </div>
+                            <a href="" class="catalog-item__link">Подробнее</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Крупнейшая мечеть города и одна из крупнейших мечетей Казахстана.</li>
+                            <a href="#" class="catalog-item__back">Назад</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Вознесенский Кафедральный собор</div>
+                            <img src="img/4/Sobor.jpg" alt="mechet" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Время работы:</span> ежедневно с 7:00 до 18:00
+                            <br> 
+                            <span>Время пути от международного аэропорта:</span> 23 <br> минуты
+                            </div>
+                            <a href="" class="catalog-item__link">Подробнее</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Вознесенский собор — православный храм в Алма-Ате, на территории парка имени 28 гвардейцев-панфиловцев, один из двух кафедральных соборов Астанайской и Алматинской епархии Русской православной церкви. <br> <br> Был построен в Пушкинском парке города Верного Семиреченской области в 1904—1907 годах как кафедральный собор Туркестанской епархии. <br>  <br> При высоте 41,4 (до подкрестного шара колокольни) или 54 м в общем- это одна из самых высоких деревянных церквей мира; образец сейсмостойкого сооружения. Включён в список памятников истории и культуры Казахстана республиканского значения.</li>
+                            <a href="#" class="catalog-item__back">Назад</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content catalog__content_active">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Кок-Тобе</div>
+                            <img src="img/4/Koktobe.jpg" alt="koktobe" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Время работы:</span> круглый год
+                            <br> 
+                            <span>Время пути от международного аэропорта:</span> 30 <br> минут
+                            </div>
+                            <a href="#" class="catalog-item__link">Подробнее</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Парк развлечений «Кок Тобе» — один из символов города Алматы и всего Казахстана, расположенный на пике горы Кок Тобе на высоте 1 100 метров над уровнем моря, в 5 минутах езды от центра города. <br>  <br>
+                            На территории парка расположены множество мест развлечений, одни из лучших ресторанов города, а так же живой парк с экзотическими представителями животного мира.</li>
+                            <a href="#" class="catalog-item__back">Назад</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Медеу</div>
+                            <img src="img/4/Medeu.jpg" alt="Medeu" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Время работы:</span> круглый год
+                            <br> 
+                            <span>Время пути от международного аэропорта:</span> нет данных
+                            </div>
+                            <a href="" class="catalog-item__link">Подробнее</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Ледовый каток Медеу, расположенный на высоте 1691,2 метра над уровнем моря. Он был возведен в 1972 году. Поверхность льда занимает 10,5 тысяч кв.м., что позволяет проводить соревнования по конькобежному спорту, хоккею и фигурному катанию. <br>  <br> Мягкий климат в ущелье, оптимальной уровень солнечной радиации, невысокое атмосферное давление, слабый ветер и чистая ледниковая вода – все это обеспечило высокогорному катку широкую популярность. Более 120 мировых рекордов было установлено здесь известными спортсменами.</li>
+                            <a href="#" class="catalog-item__back">Назад</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Шымбулак</div>
+                            <img src="img/4/SHymbulak-1.jpg" alt="Medeu" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Время работы:</span> круглый год
+                            <br> 
+                            <span>Время пути от международного аэропорта:</span> нет данных
+                            </div>
+                            <a href="" class="catalog-item__link">Подробнее</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Горный курорт «Шымбулак» – расположен в живописном ущелье Заилийского Алатау на высоте 2260 метров над уровнем моря, в 15 минутах езды от центра города Алматы. <br> <br> Добраться к курорту Вы можете по канатной дороге, по которой курсируют 10 подъемников, а так же на общественном транспорте или автомобиле. Время работы курорта круглый год. На территории курорта имеются множество мест для настоящего отдыха. Красоты Заилийского Алатау никого не оставят равнодушным.</li>
+                            <a href="#" class="catalog-item__back">Назад</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <div class="catalog-item__subtitle">Центральный парк <br> культуры и отдыха</div>
+                            <img src="img/4/centralpark.jpg" alt="Park" class="catalog-item__img">
+                            <div class="catalog-item__descr">
+                            <span>Время работы:</span> круглый год
+                            <br> 
+                            <span>Время пути от международного аэропорта:</span> нет данных
+                            </div>
+                            <a href="" class="catalog-item__link">Подробнее</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Центральный парк культуры и отдыха находится в Медеуском районе г.Алматы. Заложен парк в 1856 году ученым-садоводом г.Криштопенко и назывался «Казенный сад». Парк был местом для прогулок и офицеров Верненского гарнизона.
+                                <br> <br>
+                                В 1934 году парк был реконструирован, на берегах углублённого водоёма были размещены базы отдыха трудящихся Алма-Аты, оборудованы аттракционы.
+                                <br> <br>
+                                На территории парка расположены детские аттракционы, детская железная дорога, зимний и летний аквапарки, спортивные площадки, станции проката лодок и катамаранов, разнообразные кафе, динопарк.</li>
+                            <a href="#" class="catalog-item__back">Назад</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="links">
+                <div class="links__wrapper">
+                    <a href="#menu">на главную</a>
+                    <a href="#catalog">список мест</a>
+                    <a href="#afisha">афиша</a>
+                </div>
+                <div class="divider">
+                    <hr>
+                </div>
+                <div class="links__contacts">
+                    Свяжитесь с нами:<a href="tel:+77773222222" class="contacts__tel"> +7(777)322-22-22</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a id="back2Top" title="Наверх" href="#"> <img src="icons/free-icon-up-arrow-25223.png" alt="up"> </a>
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body> 
+</html>
